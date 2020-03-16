@@ -18,5 +18,10 @@
 //= require_tree .
 
 $(document).on('turbolinks:load', function() {
+	// For S-UI dropdown
 	$('.ui.dropdown').dropdown();
+	// For S-UI messages
+	$('.message .close').on('click', function() {
+    	$(this).closest('.message').transition('fade');
+  	});
 })
