@@ -17,6 +17,12 @@
 //= require semantic-ui
 //= require_tree .
 
+function scroll_bottom() {
+	if ($('#messages').length > 0) {
+		$('#messages').scrollTop($('#messages')[0].scrollHeight);
+	}
+}
+
 $(document).on('turbolinks:load', function() {
 	// For S-UI dropdown
 	$('.ui.dropdown').dropdown();
@@ -24,4 +30,6 @@ $(document).on('turbolinks:load', function() {
 	$('.message .close').on('click', function() {
     	$(this).closest('.message').transition('fade');
   	});
+  	// For auto-scroll to bottom of feed
+  	scroll_bottom();
 })
