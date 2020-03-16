@@ -12,3 +12,6 @@ User.create(username: "Mat", password: "password")
 User.create(username: "Cat", password: "password")
 User.create(username: "Dan", password: "password")
 User.create(username: "Kim", password: "password")
+
+Message.create(body: "Random message", user: User.first)
+Message.create(body: "Random message", user: User.last)
