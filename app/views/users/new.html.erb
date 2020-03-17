@@ -1,10 +1,13 @@
+<!-- Display validation errors -->
+<%= render 'shared/errors', obj: @user %>
+
 <div class="ui center aligned custom-title medium header">
-  Login to Chatroom
+  Create Account
 </div>
 
 <div class="ui middle aligned center aligned grid">
   <div class="ten wide column">
-    <%= form_for(:session, html: {class: "ui large form", role: "form"}, url: login_path) do |f| %>
+    <%= form_for(@user, :html => {class: "ui large form", role: "form"}) do |f| %>
       <div class="ui stacked segment">
         <div class="field">
           <div class="ui left icon input">
@@ -21,9 +24,5 @@
         <%= f.button "Login", class: "ui fluid large custom-btn submit button" %>
       </div>
     <% end %>
-
-    <div class="ui message">
-      New to us? <%= link_to "Sign Up", signup_path %>
-    </div>
   </div>
 </div>

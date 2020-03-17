@@ -1,0 +1,16 @@
+<% if obj.errors.any? %>
+  <div class="ui negative message">
+    <div class="header">
+      <!-- Show the error count -->
+      <h2 class="panel-title"> 
+        <%= pluralize(obj.errors.count, "error") %>
+        prevented this account from saving:
+      </h2>
+    </div>
+    <ul class="list">
+      <% obj.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

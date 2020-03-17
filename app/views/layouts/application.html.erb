@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MessageApp</title>
+    <title>OrangeChatroom</title>
     <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- For Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <%= render 'layouts/navigation' %>
-    <div class="ui container">
+    <div class="ui container below-navbar">
       <%= render 'layouts/messages' %>
       <%= yield %>
     </div>

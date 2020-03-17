@@ -10,7 +10,29 @@
 	}
 }
 
+.custom-btn {
+	background-color: #2D4059 !important;
+	color: #F6F6F6 !important;
+}
+
+.custom-title {
+	color: #F6F6F6 !important;
+	text-shadow: 4px 4px #2D4059 !important;
+	font-weight: bold !important;
+	font-size: 4em !important;
+}
+
+.below-navbar {
+	margin-top: 50px;
+}
+
 #messages {
 	height: 15em;
 	overflow: auto;
+}
+
+body {
+	background-image: asset-url("oranges.jpg");
+	background-size: cover;
+	font-family: 'Fjalla One', sans-serif;
 }

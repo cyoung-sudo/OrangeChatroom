@@ -1,9 +1,6 @@
-<div class="ui small inverted menu">
+<div class="ui small inverted menu menu-bg">
   <div class="ui container">
-    <%= link_to "Chatroom", root_path, class: "item" %>
-    <a class="item">
-      Messages
-    </a>
+    <%= link_to "Orange Chatroom", root_path, class: "item" %>
     <div class="right menu">
       <div class="ui dropdown item">
         Account <i class="dropdown icon"></i>
@@ -15,11 +12,6 @@
           <% end %>
         </div>
       </div>
-      <% if !logged_in? %>
-        <div class="item">
-          <%= link_to "Log in", login_path, class: "ui primary button" %>
-        </div>
-      <% end %>
     </div>
   </div>
 </div>
