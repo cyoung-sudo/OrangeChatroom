@@ -21,6 +21,9 @@ gem 'bcrypt', '~> 3.1.7'
 # For better rails console output
 gem 'hirb'
 
+# For Heroku deployment
+gem 'redis', '~> 3.0'
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
